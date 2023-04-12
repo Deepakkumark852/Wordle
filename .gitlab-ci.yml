@@ -1,0 +1,20 @@
+stages:
+  - build
+  - docker
+
+maven-build:
+  image: maven:3-jdk-8
+  stage: build
+  script:
+     - "mvn clean install package -B"
+  artifacts:
+    paths:
+      - target/*.jar
+
+docker-build:
+  image: docker
+  services: 
+    - docker:dind
+  stage: docker
+  script:
+    - docker build -t gitlab-demo-tn .
