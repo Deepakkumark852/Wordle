@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>gov.nic</groupId>
-	<artifactId>spring-boot-docker</artifactId>
+	<artifactId>anand-deepak</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-docker</name>
+	<name>anand-deepak</name>
 	<description>Sample Java RESTful Application powered by Spring Boot Framework illustrates the CI/CD capabilities of GitLab.</description>
 	<properties>
 		<java.version>11</java.version>
